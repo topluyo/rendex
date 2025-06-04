@@ -1,0 +1,13 @@
+<div>
+  <div title>{{ $_['title'] }} </div>
+  <div text>{{ $_['text'] }} </div>
+  @foreach( $_['users'], $key, $value )
+    <div data-id="{{$key}}">
+      <div>{{$value["name"]}}</div>
+      <div>{{$value["age"]}}</div>
+    </div>
+  @end
+  @if(length($_['users']) == 0)
+    <div muted>There is no item</div>
+  @end
+</div>

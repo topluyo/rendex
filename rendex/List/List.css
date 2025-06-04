@@ -1,0 +1,11 @@
+[list]{
+  display: flex;
+  flex-direction: column;
+  background: #8881;
+  padding: 1em;
+  border-radius: 1em;
+  font-family: system-ui;
+}
+[list-item]{
+  padding: .5em 0;
+}
